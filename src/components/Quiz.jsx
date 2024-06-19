@@ -4,7 +4,7 @@ import useSound from "use-sound";
 import correct from "../sounds/correct.mp3";
 import wrong from "../sounds/wrong.mp3";
 
-const Quiz = ({ data, questionNumber, setQuestionNumber, setStop, gain }) => {
+const Quiz = ({ data, questionNumber, setQuestionNumber, setStop }) => {
   const [question, setQuestion] = useState(null);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [style, setStyle] = useState("bg-blue-600");

@@ -36,6 +36,7 @@ const Game = () => {
             </div>
           )
         ) : (
+          // partie jeu
           <div className="w-full md:w-[70%]  h-screen bg-no-repeat bg-cover bg-game py-[10%]">
             <Timer setStop={setStop} questionNumber={questionNumber} />
             <Quiz
@@ -47,7 +48,7 @@ const Game = () => {
             />
           </div>
         )}
-        {/* espace de jeu */}
+
 
         {/* espace des prix */}
         <div className="absolute w-full py-5 bottom-0 right-0 md:right-0 md:w-[30%] md:flex justify-center items-center md:h-screen text-white bg-bleu ">
@@ -55,11 +56,10 @@ const Game = () => {
             {prix.map((price, index) => (
               <li
                 key={index}
-                className={`flex items-center justify-center gap-5 ${
-                  questionNumber === price.id
-                    ? "bg-yellow-600 px-1 md:px-3 rounded-full"
-                    : ""
-                }`}
+                className={`flex items-center justify-center gap-5 ${questionNumber === price.id
+                  ? "bg-yellow-600 px-1 md:px-3 rounded-full"
+                  : ""
+                  }`}
               >
                 <span>{price.id} </span>
                 <span> {price.price}</span>

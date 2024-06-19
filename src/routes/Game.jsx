@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Quiz from "../components/Quiz";
 import Timer from "../components/Timer";
 import { data, prices } from "../../data";
+import Bg from '../assets/plateau.jpg';
 
 const Game = () => {
   const [questionNumber, setQuestionNumber] = useState(1);
@@ -37,7 +38,7 @@ const Game = () => {
           )
         ) : (
           // partie jeu
-          <div className="w-full md:w-[70%]  h-screen bg-no-repeat bg-cover bg-game py-[10%]">
+          <div className="w-full md:w-[70%]  h-screen  py-[10%]">
             <Timer setStop={setStop} questionNumber={questionNumber} />
             <Quiz
               data={data}

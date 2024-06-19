@@ -15,7 +15,7 @@ export default {
       },
       backgroundImage: {
         'million': "url('./src/assets/million.jpg' )",
-        'game': "url('./src/assets/fond.jpg' )"
+        'game': "url('./src/assets/plateau.jpg' )"
       },
       animation: {
         flash: 'flash .5s cubic-bezier(0.4, 0, 0.6, 1) 4',

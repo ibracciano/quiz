@@ -5,8 +5,8 @@ import Admin from "./routes/Admin"
 
 const App = () => {
   const router = createBrowserRouter([
-    { path: "/", element: <Login /> },
-    { path: "/game", element: <Game /> },
+    { path: "/", element: <Game /> },
+    { path: "/login", element: <Login /> },
     { path: "/admin", element: <Admin /> }
   ])
 
